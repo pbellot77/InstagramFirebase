@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -22,8 +23,23 @@ class ViewController: UIViewController {
 		tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
 		tf.borderStyle = .roundedRect
 		tf.font = UIFont.systemFont(ofSize: 14)
+		
+		tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
 		return tf
 	}()
+	
+	@objc func handleTextInputChange() {
+		let isFormValid = emailTextField.text?.count ?? 0 > 0 &&
+			usernameTextField.text?.count ?? 0 > 0 &&
+			passwordTextField.text?.count ?? 0 > 0
+		if isFormValid {
+			signUpButton.isEnabled = true
+			signUpButton.backgroundColor = UIColor.rgb(red: 17, green: 154, blue: 237)
+		} else {
+			signUpButton.isEnabled = false
+			signUpButton.backgroundColor = UIColor.rgb(red: 149, green: 204, blue: 244)
+		}
+	}
 	
 	let usernameTextField: UITextField = {
 		let tf = UITextField()
@@ -31,6 +47,7 @@ class ViewController: UIViewController {
 		tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
 		tf.borderStyle = .roundedRect
 		tf.font = UIFont.systemFont(ofSize: 14)
+		tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
 		return tf
 	}()
 	
@@ -41,6 +58,7 @@ class ViewController: UIViewController {
 		tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
 		tf.borderStyle = .roundedRect
 		tf.font = UIFont.systemFont(ofSize: 14)
+		tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
 		return tf
 	}()
 	
@@ -51,8 +69,25 @@ class ViewController: UIViewController {
 		button.layer.cornerRadius = 5
 		button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
 		button.setTitleColor(.white, for: .normal)
+		
+		button.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
+		
+		button.isEnabled = false
 		return button
 	}()
+	
+	@objc func handleSignUp() {
+		guard let email = emailTextField.text, email.count > 0 else { return }
+		guard let username = usernameTextField.text, username.count > 0 else { return }
+		guard let password = passwordTextField.text, password.count > 0 else { return }
+		Auth.auth().createUser(withEmail: email, password: password) { (user: User?, error: Error?) in
+			if let err = error {
+				print("Failed to create user:", err)
+				return
+			}
+			print("Successfully created user:", user?.uid ?? "")
+		}
+	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
