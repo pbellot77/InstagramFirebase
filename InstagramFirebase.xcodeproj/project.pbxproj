@@ -14,6 +14,10 @@
 		BA08B9392034E2BE00856BA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA08B9372034E2BE00856BA7 /* LaunchScreen.storyboard */; };
 		BA9F28482035ECAB00BE9A0F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9F28472035ECAB00BE9A0F /* Extensions.swift */; };
 		BA9F284B203602A700BE9A0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA9F284A203602A700BE9A0F /* GoogleService-Info.plist */; };
+		BAE215F4203C775B00EAABB2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215F3203C775B00EAABB2 /* MainTabBarController.swift */; };
+		BAE215F6203C787000EAABB2 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215F5203C787000EAABB2 /* UserProfileController.swift */; };
+		BAE215F9203C878800EAABB2 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215F8203C878800EAABB2 /* UserProfileHeader.swift */; };
+		BAE215FC203C920600EAABB2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215FB203C920600EAABB2 /* User.swift */; };
 		D652BD86EC704B0197A11C21 /* Pods_InstagramFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1D1170E6764D3EA8D6F535 /* Pods_InstagramFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +34,10 @@
 		BA08B93A2034E2BE00856BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA9F28472035ECAB00BE9A0F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BA9F284A203602A700BE9A0F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAE215F3203C775B00EAABB2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		BAE215F5203C787000EAABB2 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
+		BAE215F8203C878800EAABB2 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
+		BAE215FB203C920600EAABB2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,8 @@
 		BA08B92D2034E2BC00856BA7 /* InstagramFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				BAE215FA203C91F900EAABB2 /* Model */,
+				BAE215F7203C876E00EAABB2 /* UserProfile */,
 				BA9F28462035EC8000BE9A0F /* Utils */,
 				BA9F2849203600F800BE9A0F /* Controllers */,
 				BA08B9322034E2BD00856BA7 /* Main.storyboard */,
@@ -106,8 +116,26 @@
 			isa = PBXGroup;
 			children = (
 				BA08B9302034E2BD00856BA7 /* ViewController.swift */,
+				BAE215F3203C775B00EAABB2 /* MainTabBarController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BAE215F7203C876E00EAABB2 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				BAE215F8203C878800EAABB2 /* UserProfileHeader.swift */,
+				BAE215F5203C787000EAABB2 /* UserProfileController.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		BAE215FA203C91F900EAABB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAE215FB203C920600EAABB2 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +275,11 @@
 			files = (
 				BA08B9312034E2BD00856BA7 /* ViewController.swift in Sources */,
 				BA9F28482035ECAB00BE9A0F /* Extensions.swift in Sources */,
+				BAE215F4203C775B00EAABB2 /* MainTabBarController.swift in Sources */,
+				BAE215F9203C878800EAABB2 /* UserProfileHeader.swift in Sources */,
+				BAE215F6203C787000EAABB2 /* UserProfileController.swift in Sources */,
 				BA08B92F2034E2BC00856BA7 /* AppDelegate.swift in Sources */,
+				BAE215FC203C920600EAABB2 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
