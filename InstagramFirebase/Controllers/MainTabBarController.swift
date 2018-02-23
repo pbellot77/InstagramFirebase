@@ -22,10 +22,10 @@ class MainTabBarController: UITabBarController {
 			}
 			return
 		}
-		
-		let redVc = UIViewController()
-		redVc.view.backgroundColor = .red
-		
+		setupViewControllers()
+	}
+	
+	func setupViewControllers() {
 		let layout = UICollectionViewFlowLayout()
 		let userProfileController = UserProfileController(collectionViewLayout: layout)
 		
@@ -36,6 +36,8 @@ class MainTabBarController: UITabBarController {
 		
 		tabBar.tintColor = .black
 		
-		viewControllers = [navController]
+		viewControllers = [navController, UIViewController()]
 	}
+	
+	
 }
