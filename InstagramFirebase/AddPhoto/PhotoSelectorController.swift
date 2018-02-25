@@ -9,17 +9,38 @@
 import UIKit
 
 class PhotoSelectorController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+	
+	let cellId = "cellID"
+	let headerId = "headerId"
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		collectionView?.backgroundColor = .yellow
 		
 		setupNavigationButtons()
 		
-		collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellID")
+		collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
+		collectionView?.register(UICollectionViewCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+		return UIEdgeInsets(top: 1, left: 0, bottom: 0, right: 0)
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+		let width = view.frame.width
+		return CGSize(width: width, height: width)
+	}
+	
+	override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+		let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath)
+		header.backgroundColor = .red
+		
+		return header
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		let width = (view.frame.width / 4)  - 2
+		let width = (view.frame.width - 3)  / 4
 		return CGSize(width: width, height: width)
 	}
 	
@@ -36,7 +57,7 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
 	}
 	
 	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellID", for: indexPath)
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
 		
 		cell.backgroundColor = .blue
 		
