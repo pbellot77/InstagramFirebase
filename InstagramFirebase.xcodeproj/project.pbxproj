@@ -17,6 +17,7 @@
 		BA9F28482035ECAB00BE9A0F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9F28472035ECAB00BE9A0F /* Extensions.swift */; };
 		BA9F284B203602A700BE9A0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA9F284A203602A700BE9A0F /* GoogleService-Info.plist */; };
 		BABA68CD204481DD00D18FED /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA68CC204481DD00D18FED /* PhotoSelectorCell.swift */; };
+		BABA68CF204495D300D18FED /* photoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA68CE204495D300D18FED /* photoSelectorHeader.swift */; };
 		BAE215F4203C775B00EAABB2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215F3203C775B00EAABB2 /* MainTabBarController.swift */; };
 		BAE215F6203C787000EAABB2 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215F5203C787000EAABB2 /* UserProfileController.swift */; };
 		BAE215F9203C878800EAABB2 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215F8203C878800EAABB2 /* UserProfileHeader.swift */; };
@@ -40,6 +41,7 @@
 		BA9F28472035ECAB00BE9A0F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BA9F284A203602A700BE9A0F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BABA68CC204481DD00D18FED /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
+		BABA68CE204495D300D18FED /* photoSelectorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoSelectorHeader.swift; sourceTree = "<group>"; };
 		BAE215F3203C775B00EAABB2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		BAE215F5203C787000EAABB2 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		BAE215F8203C878800EAABB2 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				BA73FABF204356C50089916C /* PhotoSelectorController.swift */,
+				BABA68CE204495D300D18FED /* photoSelectorHeader.swift */,
 				BABA68CC204481DD00D18FED /* PhotoSelectorCell.swift */,
 			);
 			path = AddPhoto;
@@ -306,6 +309,7 @@
 				BAE215F6203C787000EAABB2 /* UserProfileController.swift in Sources */,
 				BA5EC539203F3A5200F1E918 /* LoginController.swift in Sources */,
 				BA08B92F2034E2BC00856BA7 /* AppDelegate.swift in Sources */,
+				BABA68CF204495D300D18FED /* photoSelectorHeader.swift in Sources */,
 				BAE215FC203C920600EAABB2 /* User.swift in Sources */,
 				BABA68CD204481DD00D18FED /* PhotoSelectorCell.swift in Sources */,
 			);
