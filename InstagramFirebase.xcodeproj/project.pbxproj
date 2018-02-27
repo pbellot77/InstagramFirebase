@@ -19,6 +19,8 @@
 		BABA68CD204481DD00D18FED /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA68CC204481DD00D18FED /* PhotoSelectorCell.swift */; };
 		BABA68CF204495D300D18FED /* photoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA68CE204495D300D18FED /* photoSelectorHeader.swift */; };
 		BABA68D12045C3B100D18FED /* SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA68D02045C3B100D18FED /* SharePhotoController.swift */; };
+		BABA68D32045F18900D18FED /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA68D22045F18900D18FED /* Post.swift */; };
+		BABA68D52045F37200D18FED /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA68D42045F37200D18FED /* UserProfilePhotoCell.swift */; };
 		BAE215F4203C775B00EAABB2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215F3203C775B00EAABB2 /* MainTabBarController.swift */; };
 		BAE215F6203C787000EAABB2 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215F5203C787000EAABB2 /* UserProfileController.swift */; };
 		BAE215F9203C878800EAABB2 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215F8203C878800EAABB2 /* UserProfileHeader.swift */; };
@@ -44,6 +46,8 @@
 		BABA68CC204481DD00D18FED /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
 		BABA68CE204495D300D18FED /* photoSelectorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoSelectorHeader.swift; sourceTree = "<group>"; };
 		BABA68D02045C3B100D18FED /* SharePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoController.swift; sourceTree = "<group>"; };
+		BABA68D22045F18900D18FED /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		BABA68D42045F37200D18FED /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
 		BAE215F3203C775B00EAABB2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		BAE215F5203C787000EAABB2 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		BAE215F8203C878800EAABB2 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 			children = (
 				BAE215F8203C878800EAABB2 /* UserProfileHeader.swift */,
 				BAE215F5203C787000EAABB2 /* UserProfileController.swift */,
+				BABA68D42045F37200D18FED /* UserProfilePhotoCell.swift */,
 			);
 			path = UserProfile;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				BAE215FB203C920600EAABB2 /* User.swift */,
+				BABA68D22045F18900D18FED /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,12 +314,14 @@
 				BA9F28482035ECAB00BE9A0F /* Extensions.swift in Sources */,
 				BAE215F4203C775B00EAABB2 /* MainTabBarController.swift in Sources */,
 				BA73FAC0204356C50089916C /* PhotoSelectorController.swift in Sources */,
+				BABA68D32045F18900D18FED /* Post.swift in Sources */,
 				BAE215F9203C878800EAABB2 /* UserProfileHeader.swift in Sources */,
 				BAE215F6203C787000EAABB2 /* UserProfileController.swift in Sources */,
 				BABA68D12045C3B100D18FED /* SharePhotoController.swift in Sources */,
 				BA5EC539203F3A5200F1E918 /* LoginController.swift in Sources */,
 				BA08B92F2034E2BC00856BA7 /* AppDelegate.swift in Sources */,
 				BABA68CF204495D300D18FED /* photoSelectorHeader.swift in Sources */,
+				BABA68D52045F37200D18FED /* UserProfilePhotoCell.swift in Sources */,
 				BAE215FC203C920600EAABB2 /* User.swift in Sources */,
 				BABA68CD204481DD00D18FED /* PhotoSelectorCell.swift in Sources */,
 			);
