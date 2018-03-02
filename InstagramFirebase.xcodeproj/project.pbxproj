@@ -12,6 +12,8 @@
 		BA08B9342034E2BD00856BA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA08B9322034E2BD00856BA7 /* Main.storyboard */; };
 		BA08B9362034E2BE00856BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA08B9352034E2BE00856BA7 /* Assets.xcassets */; };
 		BA08B9392034E2BE00856BA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA08B9372034E2BE00856BA7 /* LaunchScreen.storyboard */; };
+		BA3719722049AF93002E7FB9 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3719712049AF93002E7FB9 /* HomeController.swift */; };
+		BA3719742049B17F002E7FB9 /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3719732049B17F002E7FB9 /* HomePostCell.swift */; };
 		BA5EC539203F3A5200F1E918 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5EC538203F3A5200F1E918 /* LoginController.swift */; };
 		BA73FAC0204356C50089916C /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FABF204356C50089916C /* PhotoSelectorController.swift */; };
 		BA9F28482035ECAB00BE9A0F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9F28472035ECAB00BE9A0F /* Extensions.swift */; };
@@ -40,6 +42,8 @@
 		BA08B9352034E2BE00856BA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA08B9382034E2BE00856BA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA08B93A2034E2BE00856BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA3719712049AF93002E7FB9 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		BA3719732049B17F002E7FB9 /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
 		BA5EC538203F3A5200F1E918 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		BA73FABF204356C50089916C /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
 		BA9F28472035ECAB00BE9A0F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 		BA08B92D2034E2BC00856BA7 /* InstagramFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				BA3719702049AF71002E7FB9 /* Home */,
 				BA73FABE204356980089916C /* AddPhoto */,
 				BA5EC537203F3A3500F1E918 /* Login */,
 				BAE215FA203C91F900EAABB2 /* Model */,
@@ -120,6 +125,15 @@
 				BA9F284A203602A700BE9A0F /* GoogleService-Info.plist */,
 			);
 			path = InstagramFirebase;
+			sourceTree = "<group>";
+		};
+		BA3719702049AF71002E7FB9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA3719712049AF93002E7FB9 /* HomeController.swift */,
+				BA3719732049B17F002E7FB9 /* HomePostCell.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		BA5EC537203F3A3500F1E918 /* Login */ = {
@@ -314,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA08B9312034E2BD00856BA7 /* SignUpController.swift in Sources */,
+				BA3719742049B17F002E7FB9 /* HomePostCell.swift in Sources */,
 				BA9F28482035ECAB00BE9A0F /* Extensions.swift in Sources */,
 				BAE215F4203C775B00EAABB2 /* MainTabBarController.swift in Sources */,
 				BA73FAC0204356C50089916C /* PhotoSelectorController.swift in Sources */,
@@ -325,6 +340,7 @@
 				BA5EC539203F3A5200F1E918 /* LoginController.swift in Sources */,
 				BA08B92F2034E2BC00856BA7 /* AppDelegate.swift in Sources */,
 				BABA68CF204495D300D18FED /* photoSelectorHeader.swift in Sources */,
+				BA3719722049AF93002E7FB9 /* HomeController.swift in Sources */,
 				BABA68D52045F37200D18FED /* UserProfilePhotoCell.swift in Sources */,
 				BAE215FC203C920600EAABB2 /* User.swift in Sources */,
 				BABA68CD204481DD00D18FED /* PhotoSelectorCell.swift in Sources */,
