@@ -12,7 +12,6 @@ import UIKit
 var imageCache = [String: UIImage]()
 
 class CustomImageView: UIImageView {
-	
 	var lastURLUsedToLoadImage: String?
 	
 	func loadImage(urlString: String) {
