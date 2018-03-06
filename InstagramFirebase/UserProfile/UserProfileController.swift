@@ -83,7 +83,6 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! UserProfilePhotoCell
 		
 		cell.post = posts[indexPath.item]
-		
 		return cell
 	}
 	
@@ -102,9 +101,7 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 	
 	override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 		let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerId", for: indexPath) as! UserProfileHeader
-		
-		header.user = self.user 
-		
+		header.user = self.user
 		return header
 	}
 	
@@ -116,17 +113,10 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 	fileprivate func fetchUser() {
 		guard let uid = Auth.auth().currentUser?.uid else { return }
 		
-		Database.database().reference().child("users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
-			print(snapshot.value ?? "")
-			
-			guard let dictionary = snapshot.value as? [String: Any] else { return }
-			
-			self.user = User(dictionary: dictionary)
+		Database.fetchUserWithUID(uid: uid) { (user) in
+			self.user = user
 			self.navigationItem.title = self.user?.username
 			self.collectionView?.reloadData()
-			
-		}) { (err) in
-			print("Failed to fetch user:", err)
 		}
 	}
 }

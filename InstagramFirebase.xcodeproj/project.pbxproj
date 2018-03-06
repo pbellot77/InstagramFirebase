@@ -24,6 +24,7 @@
 		BABA68D32045F18900D18FED /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA68D22045F18900D18FED /* Post.swift */; };
 		BABA68D52045F37200D18FED /* UserProfilePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA68D42045F37200D18FED /* UserProfilePhotoCell.swift */; };
 		BABA68D72047150300D18FED /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA68D62047150300D18FED /* CustomImageView.swift */; };
+		BAC82787204F31BD00A4C645 /* FirebaseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC82786204F31BD00A4C645 /* FirebaseUtils.swift */; };
 		BAE215F4203C775B00EAABB2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215F3203C775B00EAABB2 /* MainTabBarController.swift */; };
 		BAE215F6203C787000EAABB2 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215F5203C787000EAABB2 /* UserProfileController.swift */; };
 		BAE215F9203C878800EAABB2 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215F8203C878800EAABB2 /* UserProfileHeader.swift */; };
@@ -54,6 +55,7 @@
 		BABA68D22045F18900D18FED /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		BABA68D42045F37200D18FED /* UserProfilePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePhotoCell.swift; sourceTree = "<group>"; };
 		BABA68D62047150300D18FED /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		BAC82786204F31BD00A4C645 /* FirebaseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUtils.swift; sourceTree = "<group>"; };
 		BAE215F3203C775B00EAABB2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		BAE215F5203C787000EAABB2 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		BAE215F8203C878800EAABB2 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				BA9F28472035ECAB00BE9A0F /* Extensions.swift */,
 				BABA68D62047150300D18FED /* CustomImageView.swift */,
+				BAC82786204F31BD00A4C645 /* FirebaseUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC82787204F31BD00A4C645 /* FirebaseUtils.swift in Sources */,
 				BA08B9312034E2BD00856BA7 /* SignUpController.swift in Sources */,
 				BA3719742049B17F002E7FB9 /* HomePostCell.swift in Sources */,
 				BA9F28482035ECAB00BE9A0F /* Extensions.swift in Sources */,
