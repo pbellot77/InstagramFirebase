@@ -25,9 +25,9 @@ class UserSearchController: UICollectionViewController, UICollectionViewDelegate
 		if searchText.isEmpty {
 			filteredUsers = users
 		} else {
-				filteredUsers = self.users.filter { (user) -> Bool in
-					return user.username.lowercased().contains(searchText.lowercased())
-				}
+			filteredUsers = self.users.filter { (user) -> Bool in
+				return user.username.lowercased().contains(searchText.lowercased())
+			}
 		}
 		self.collectionView?.reloadData()
 	}
