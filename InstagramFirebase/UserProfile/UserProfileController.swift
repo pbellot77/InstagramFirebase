@@ -23,7 +23,7 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 		
 		setupLogOutButton()
 		fetchUser()
-//		fetchOrderedPosts()
+		//		fetchOrderedPosts()
 	}
 	
 	var posts = [Post]()
@@ -56,7 +56,7 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 		alertController.addAction(UIAlertAction(title: "Log Out", style: .destructive, handler: { (_) in
 			
 			do {
-			  try	Auth.auth().signOut()
+				try	Auth.auth().signOut()
 				let loginController = LoginController()
 				let navController = UINavigationController(rootViewController: loginController)
 				self.present(navController, animated: true, completion: nil)
@@ -69,7 +69,7 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 		
 		present(alertController, animated: true, completion: nil)
 	}
-
+	
 	
 	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return posts.count
@@ -109,7 +109,7 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
 	fileprivate func fetchUser() {
 		let uid = userId ?? (Auth.auth().currentUser?.uid ?? "")
 		
-//		guard let uid = Auth.auth().currentUser?.uid else { return }
+		//		guard let uid = Auth.auth().currentUser?.uid else { return }
 		
 		Database.fetchUserWithUID(uid: uid) { (user) in
 			self.user = user

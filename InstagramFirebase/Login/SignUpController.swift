@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class SignUpController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+	
 	let plusPhotoButton: UIButton = {
 		let button = UIButton(type: .system)
 		button.setImage(#imageLiteral(resourceName: "plus_photo"), for: .normal)
@@ -170,16 +170,16 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate, UINav
 		view.backgroundColor = .white
 		
 		view.addSubview(plusPhotoButton)
-	
+		
 		plusPhotoButton.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil,
-												paddingTop: 40, paddingLeft: 0, paddingBottom: 0, paddingRight: 0,
-												width: 140, height: 140)
-
+													 paddingTop: 40, paddingLeft: 0, paddingBottom: 0, paddingRight: 0,
+													 width: 140, height: 140)
+		
 		plusPhotoButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 		
 		setupInputFields()
 	}
-
+	
 	fileprivate func setupInputFields() {
 		
 		let stackView = UIStackView(arrangedSubviews: [emailTextField, usernameTextField, passwordTextField, signUpButton])
