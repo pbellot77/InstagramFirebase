@@ -31,6 +31,7 @@
 		BAE215FC203C920600EAABB2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE215FB203C920600EAABB2 /* User.swift */; };
 		BAEFEE59205042EE00EA4126 /* UserSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE58205042EE00EA4126 /* UserSearchController.swift */; };
 		BAEFEE5B20504A7D00EA4126 /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE5A20504A7D00EA4126 /* UserSearchCell.swift */; };
+		BAEFEE5E2057057600EA4126 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE5D2057057600EA4126 /* CameraController.swift */; };
 		D652BD86EC704B0197A11C21 /* Pods_InstagramFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1D1170E6764D3EA8D6F535 /* Pods_InstagramFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		BAE215FB203C920600EAABB2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BAEFEE58205042EE00EA4126 /* UserSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchController.swift; sourceTree = "<group>"; };
 		BAEFEE5A20504A7D00EA4126 /* UserSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
+		BAEFEE5D2057057600EA4126 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		BA08B92D2034E2BC00856BA7 /* InstagramFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				BAEFEE5C2057055A00EA4126 /* Camera */,
 				BAEFEE57205042CB00EA4126 /* Search */,
 				BA3719702049AF71002E7FB9 /* Home */,
 				BA73FABE204356980089916C /* AddPhoto */,
@@ -207,6 +210,14 @@
 				BAEFEE5A20504A7D00EA4126 /* UserSearchCell.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		BAEFEE5C2057055A00EA4126 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				BAEFEE5D2057057600EA4126 /* CameraController.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +364,7 @@
 				BA73FAC0204356C50089916C /* PhotoSelectorController.swift in Sources */,
 				BAEFEE59205042EE00EA4126 /* UserSearchController.swift in Sources */,
 				BABA68D72047150300D18FED /* CustomImageView.swift in Sources */,
+				BAEFEE5E2057057600EA4126 /* CameraController.swift in Sources */,
 				BABA68D32045F18900D18FED /* Post.swift in Sources */,
 				BAE215F9203C878800EAABB2 /* UserProfileHeader.swift in Sources */,
 				BAE215F6203C787000EAABB2 /* UserProfileController.swift in Sources */,
