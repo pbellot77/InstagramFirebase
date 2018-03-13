@@ -33,6 +33,8 @@
 		BAEFEE5B20504A7D00EA4126 /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE5A20504A7D00EA4126 /* UserSearchCell.swift */; };
 		BAEFEE5E2057057600EA4126 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE5D2057057600EA4126 /* CameraController.swift */; };
 		BAEFEE6020581C1700EA4126 /* PreviewPhotoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE5F20581C1700EA4126 /* PreviewPhotoContainerView.swift */; };
+		BAEFEE6220582ADF00EA4126 /* CustomAnimationPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE6120582ADF00EA4126 /* CustomAnimationPresentor.swift */; };
+		BAEFEE6420582EC300EA4126 /* CustomAnimationDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE6320582EC300EA4126 /* CustomAnimationDismisser.swift */; };
 		D652BD86EC704B0197A11C21 /* Pods_InstagramFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1D1170E6764D3EA8D6F535 /* Pods_InstagramFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		BAEFEE5A20504A7D00EA4126 /* UserSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
 		BAEFEE5D2057057600EA4126 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		BAEFEE5F20581C1700EA4126 /* PreviewPhotoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPhotoContainerView.swift; sourceTree = "<group>"; };
+		BAEFEE6120582ADF00EA4126 /* CustomAnimationPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationPresentor.swift; sourceTree = "<group>"; };
+		BAEFEE6320582EC300EA4126 /* CustomAnimationDismisser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationDismisser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +223,8 @@
 			children = (
 				BAEFEE5D2057057600EA4126 /* CameraController.swift */,
 				BAEFEE5F20581C1700EA4126 /* PreviewPhotoContainerView.swift */,
+				BAEFEE6120582ADF00EA4126 /* CustomAnimationPresentor.swift */,
+				BAEFEE6320582EC300EA4126 /* CustomAnimationDismisser.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -367,11 +373,13 @@
 				BA73FAC0204356C50089916C /* PhotoSelectorController.swift in Sources */,
 				BAEFEE59205042EE00EA4126 /* UserSearchController.swift in Sources */,
 				BABA68D72047150300D18FED /* CustomImageView.swift in Sources */,
+				BAEFEE6220582ADF00EA4126 /* CustomAnimationPresentor.swift in Sources */,
 				BAEFEE5E2057057600EA4126 /* CameraController.swift in Sources */,
 				BABA68D32045F18900D18FED /* Post.swift in Sources */,
 				BAE215F9203C878800EAABB2 /* UserProfileHeader.swift in Sources */,
 				BAE215F6203C787000EAABB2 /* UserProfileController.swift in Sources */,
 				BABA68D12045C3B100D18FED /* SharePhotoController.swift in Sources */,
+				BAEFEE6420582EC300EA4126 /* CustomAnimationDismisser.swift in Sources */,
 				BA5EC539203F3A5200F1E918 /* LoginController.swift in Sources */,
 				BA08B92F2034E2BC00856BA7 /* AppDelegate.swift in Sources */,
 				BAEFEE6020581C1700EA4126 /* PreviewPhotoContainerView.swift in Sources */,

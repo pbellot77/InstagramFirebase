@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class CameraController: UIViewController, AVCapturePhotoCaptureDelegate {
+class CameraController: UIViewController, AVCapturePhotoCaptureDelegate, UIViewControllerTransitioningDelegate {
 	
 	let dismissButton: UIButton = {
 		let button = UIButton(type: .system)
@@ -32,8 +32,21 @@ class CameraController: UIViewController, AVCapturePhotoCaptureDelegate {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		transitioningDelegate = self
+		
 		setupCaptureSession()
 		setupHUD()
+	}
+	
+	let customAnimationPresentor = CustomAnimationPresentor()
+	let customAnimationDismisser = CustomAnimationDismisser()
+	
+	func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+		return customAnimationPresentor
+	}
+	
+	func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+		return customAnimationDismisser
 	}
 	
 	override var prefersStatusBarHidden: Bool {
@@ -50,15 +63,12 @@ class CameraController: UIViewController, AVCapturePhotoCaptureDelegate {
 	}
 
 	@objc func handleCapturePhoto() {
-		print("Capturing photo...")
-		
 		let settings = AVCapturePhotoSettings()
 		
 		guard let previewFormatType = settings.availablePreviewPhotoPixelFormatTypes.first else { return }
 		settings.previewPhotoFormat = [kCVPixelBufferPixelFormatTypeKey as String: previewFormatType]
 		
 		output.capturePhoto(with: settings, delegate: self)
-
 	}
 	
 	func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
@@ -69,12 +79,6 @@ class CameraController: UIViewController, AVCapturePhotoCaptureDelegate {
 		containerView.previewImageView.image = previewImage
 		view.addSubview(containerView)
 		containerView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
-		
-//		let previewImageView = UIImageView(image: previewImage)
-//		view.addSubview(previewImageView)
-//		previewImageView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
-//		
-//		print("Finish processing photo sample buffer...")
 	}
 	
 	let output = AVCapturePhotoOutput()
