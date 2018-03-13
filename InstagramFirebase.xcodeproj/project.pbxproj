@@ -35,6 +35,7 @@
 		BAEFEE6020581C1700EA4126 /* PreviewPhotoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE5F20581C1700EA4126 /* PreviewPhotoContainerView.swift */; };
 		BAEFEE6220582ADF00EA4126 /* CustomAnimationPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE6120582ADF00EA4126 /* CustomAnimationPresentor.swift */; };
 		BAEFEE6420582EC300EA4126 /* CustomAnimationDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE6320582EC300EA4126 /* CustomAnimationDismisser.swift */; };
+		BAEFEE6620584B5E00EA4126 /* CommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE6520584B5E00EA4126 /* CommentsController.swift */; };
 		D652BD86EC704B0197A11C21 /* Pods_InstagramFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1D1170E6764D3EA8D6F535 /* Pods_InstagramFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		BAEFEE5F20581C1700EA4126 /* PreviewPhotoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPhotoContainerView.swift; sourceTree = "<group>"; };
 		BAEFEE6120582ADF00EA4126 /* CustomAnimationPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationPresentor.swift; sourceTree = "<group>"; };
 		BAEFEE6320582EC300EA4126 /* CustomAnimationDismisser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationDismisser.swift; sourceTree = "<group>"; };
+		BAEFEE6520584B5E00EA4126 /* CommentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				BA3719712049AF93002E7FB9 /* HomeController.swift */,
+				BAEFEE6520584B5E00EA4126 /* CommentsController.swift */,
 				BA3719732049B17F002E7FB9 /* HomePostCell.swift */,
 			);
 			path = Home;
@@ -386,6 +389,7 @@
 				BABA68CF204495D300D18FED /* photoSelectorHeader.swift in Sources */,
 				BA3719722049AF93002E7FB9 /* HomeController.swift in Sources */,
 				BABA68D52045F37200D18FED /* UserProfilePhotoCell.swift in Sources */,
+				BAEFEE6620584B5E00EA4126 /* CommentsController.swift in Sources */,
 				BAE215FC203C920600EAABB2 /* User.swift in Sources */,
 				BABA68CD204481DD00D18FED /* PhotoSelectorCell.swift in Sources */,
 			);
