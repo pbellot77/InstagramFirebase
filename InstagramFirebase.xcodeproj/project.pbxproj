@@ -32,6 +32,7 @@
 		BAEFEE59205042EE00EA4126 /* UserSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE58205042EE00EA4126 /* UserSearchController.swift */; };
 		BAEFEE5B20504A7D00EA4126 /* UserSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE5A20504A7D00EA4126 /* UserSearchCell.swift */; };
 		BAEFEE5E2057057600EA4126 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE5D2057057600EA4126 /* CameraController.swift */; };
+		BAEFEE6020581C1700EA4126 /* PreviewPhotoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEFEE5F20581C1700EA4126 /* PreviewPhotoContainerView.swift */; };
 		D652BD86EC704B0197A11C21 /* Pods_InstagramFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1D1170E6764D3EA8D6F535 /* Pods_InstagramFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		BAEFEE58205042EE00EA4126 /* UserSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchController.swift; sourceTree = "<group>"; };
 		BAEFEE5A20504A7D00EA4126 /* UserSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCell.swift; sourceTree = "<group>"; };
 		BAEFEE5D2057057600EA4126 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		BAEFEE5F20581C1700EA4126 /* PreviewPhotoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPhotoContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				BAEFEE5D2057057600EA4126 /* CameraController.swift */,
+				BAEFEE5F20581C1700EA4126 /* PreviewPhotoContainerView.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				BABA68D12045C3B100D18FED /* SharePhotoController.swift in Sources */,
 				BA5EC539203F3A5200F1E918 /* LoginController.swift in Sources */,
 				BA08B92F2034E2BC00856BA7 /* AppDelegate.swift in Sources */,
+				BAEFEE6020581C1700EA4126 /* PreviewPhotoContainerView.swift in Sources */,
 				BABA68CF204495D300D18FED /* photoSelectorHeader.swift in Sources */,
 				BA3719722049AF93002E7FB9 /* HomeController.swift in Sources */,
 				BABA68D52045F37200D18FED /* UserProfilePhotoCell.swift in Sources */,
