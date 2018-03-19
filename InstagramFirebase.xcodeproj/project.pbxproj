@@ -18,6 +18,7 @@
 		BA5838DE2059B06800B32A83 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5838DD2059B06800B32A83 /* Comment.swift */; };
 		BA5EC539203F3A5200F1E918 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5EC538203F3A5200F1E918 /* LoginController.swift */; };
 		BA73FAC0204356C50089916C /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FABF204356C50089916C /* PhotoSelectorController.swift */; };
+		BA75AAD820603BFB004B5428 /* CommentInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75AAD720603BFB004B5428 /* CommentInputAccessoryView.swift */; };
 		BA9F28482035ECAB00BE9A0F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9F28472035ECAB00BE9A0F /* Extensions.swift */; };
 		BA9F284B203602A700BE9A0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA9F284A203602A700BE9A0F /* GoogleService-Info.plist */; };
 		BABA68CD204481DD00D18FED /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA68CC204481DD00D18FED /* PhotoSelectorCell.swift */; };
@@ -59,6 +60,7 @@
 		BA5EC538203F3A5200F1E918 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		BA73FABF204356C50089916C /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
 		BA75AAD620601534004B5428 /* InstagramFirebase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InstagramFirebase.entitlements; sourceTree = "<group>"; };
+		BA75AAD720603BFB004B5428 /* CommentInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputAccessoryView.swift; sourceTree = "<group>"; };
 		BA9F28472035ECAB00BE9A0F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BA9F284A203602A700BE9A0F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BABA68CC204481DD00D18FED /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				BA3719712049AF93002E7FB9 /* HomeController.swift */,
 				BAEFEE6520584B5E00EA4126 /* CommentsController.swift */,
+				BA75AAD720603BFB004B5428 /* CommentInputAccessoryView.swift */,
 				BA5838DB2059ABBA00B32A83 /* CommentCell.swift */,
 				BA3719732049B17F002E7FB9 /* HomePostCell.swift */,
 			);
@@ -402,6 +405,7 @@
 				BA5EC539203F3A5200F1E918 /* LoginController.swift in Sources */,
 				BA08B92F2034E2BC00856BA7 /* AppDelegate.swift in Sources */,
 				BAEFEE6020581C1700EA4126 /* PreviewPhotoContainerView.swift in Sources */,
+				BA75AAD820603BFB004B5428 /* CommentInputAccessoryView.swift in Sources */,
 				BABA68CF204495D300D18FED /* photoSelectorHeader.swift in Sources */,
 				BA3719722049AF93002E7FB9 /* HomeController.swift in Sources */,
 				BABA68D52045F37200D18FED /* UserProfilePhotoCell.swift in Sources */,
@@ -557,7 +561,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BR4H78C3XC;
 				INFOPLIST_FILE = InstagramFirebase/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.patrickBellot.InstagramFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -574,7 +581,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BR4H78C3XC;
 				INFOPLIST_FILE = InstagramFirebase/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.patrickBellot.InstagramFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
